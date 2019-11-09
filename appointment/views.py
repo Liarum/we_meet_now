@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    return render(request, 'appointment/base.html')
+    return render(request, 'appointment/homepage.html')
 
 def schedule(request, id):
     if request.method=='POST':

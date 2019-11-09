@@ -1,7 +1,17 @@
+
 {% extends 'appointment/base.html' %}
 
 {% block body %}
+{% load static %} 
+<!DOCTYPE html>
+<style>
+        .back {
+            background-image: url( "{% static 'img/portfolio/black apple.png' %}" );
+            background-size: 370px 300px;
+        }
+</style>
 
-<h2>body here</h2>
+
+
 
 {% endblock %}
