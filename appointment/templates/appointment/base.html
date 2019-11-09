@@ -13,6 +13,7 @@
     <style>
         #body {
             margin: 30px;
+
         }
         #input-schedule-area {
             margin: 30px;
@@ -23,8 +24,13 @@
             float: right
         }
         .colorBlue {
-            background: blue;
+            background: black;
         }
+
+body {
+    background-color: black;
+}
+
     </style>
 
     <title>when we meet</title>
@@ -33,7 +39,8 @@
 
 
 <body>
-    <!-- navigation --> <nav class="sticky_nav"> <ul class="blog_menu"> <li><a href="[##_rss_url_##]">RSS</a></li> <li><a href="[##_taglog_link_##]">Tag</a></li> <li><a href="[##_guestbook_link_##]">GuestBook</a></li> </ul> </nav>
+
+   <center><img src="{% static 'img/logos/logo.png'%}" width="25%"></center>
 
     <div id="body">
         {% block body %}
