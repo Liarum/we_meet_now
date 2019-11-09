@@ -3,14 +3,24 @@
 {% block body %}
 {% load static %} 
 <!DOCTYPE html>
+
+
+
+
+
+
 <style>
+
         .back {
-            background-image: url( "{% static 'img/portfolio/black apple.png' %}" );
-            background-size: 370px 300px;
-        }
+        background-image: url( "{% static 'img/portfolio/black apple.png' %}" );
+        background-size: 370px 300px;
+    }
+
+
+
 </style>
 
-
+<body>
 <h2>이름과 스케줄을 입력해주세요</h2>
     <form action="/schedule/{{ id }}/" method="POST">
         {% csrf_token %}
@@ -170,6 +180,7 @@
               <input type="submit" class="btn btn-primary"></input>
             </div>
         </div>
+    </body> 
 {#    <input type="checkbox" name="1[]" value="1" />#}
 {#    <input type="checkbox" name="1[]" value="2" />#}
 {#    <input type="checkbox" name="1[]" value="3" />#}
