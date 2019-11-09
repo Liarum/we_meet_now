@@ -1,7 +1,22 @@
 {% extends 'appointment/base.html' %}
 
 {% block body %}
-    {{ aaaa }}
+
+    <h2 style="text-align: center">색칠된 날짜에 약속을 잡아보세요 :)</h2>
+
+    <div style="text-align: center; margin: 20px">
+        <h5>약속잡을 친구 초대하기</h5>
+         <div >
+            <a href="#urlCopyBtn" class="urlCopyBtn">
+                <span style="font-size: 20px">http://127.0.0.1:8000/schedule/{{id}}/</span>
+                <span class="urlCopyBtnIcon" style="margin-left:5px;">복사</span>
+            </a>
+        </div>
+    </div>
+
+
+    <input type="text" value="http://127.0.0.1:8000/schedule/{{id}}/" id="urlAddress" style="display:none;">
+
    <table class="table table-striped">
 
       <thead>
@@ -181,4 +196,34 @@
       </tbody>
 
     </table>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <style>
+        .urlCopyBtn {
+            font-weight: normal;
+            color: gray;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .urlCopyBtnIcon {
+            border: 1px solid gray;
+            border-radius: 3px;
+            padding: 0px 2px 1px 2px;
+            color: white;
+            background-color: gray;
+        }
+        .urlCopyBtnIcon a {
+            color: white;
+        }
+    </style>
+    <script type="text/javascript">
+        $('.urlCopyBtn').click(function () {
+            var urlAddress = $('#urlAddress');
+            urlAddress.css('display', 'block').select();
+            document.execCommand("Copy");
+            urlAddress.css('display', 'none');
+            alert('URL 주소가 복사 되었습니다');
+            return false;
+        });
+    </script>
 {% endblock %}

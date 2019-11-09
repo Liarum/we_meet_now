@@ -38,26 +38,36 @@
       <div class="intro-text">
         <div class="intro-lead-in">새로운 약속 플랫폼.</div>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                약속/모임/회의 만들기
-              </button>
-              
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">~Meeting 개설~</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-              
-                  <form action="/meeting/" method="POST">
-                      {% csrf_token %}
-                    <div class="modal-body">
-                        <label for="meeting_name">Meeting 이름</label>
-                        <input type="text" class="form-control" id="meeting_name" name="meeting_name" placeholder="모임 이름을 입력해주세요">
-                    </div>
+  약속/모임/회의 만들기
+</button>
+
+<!-- Modal -->
+<div style="color: black" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">~Meeting 개설~</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+    <form action="/meeting/" method="POST">
+        {% csrf_token %}
+      <div class="modal-body">
+          <label for="meeting_name">Meeting 이름</label>
+          <input type="text" class="form-control" id="meeting_name" name="meeting_name" placeholder="모임 이름을 입력해주세요">
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
