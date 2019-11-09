@@ -1,0 +1,184 @@
+{% extends 'appointment/base.html' %}
+
+{% block body %}
+    {{ aaaa }}
+   <table class="table table-striped">
+
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+          <th scope="col">목</th>
+          <th scope="col">금</th>
+          <th scope="col">토</th>
+          <th scope="col">일</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">08 ~ 09</th>
+            {% for dt in a %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">09 ~ 10</th>
+            {% for dt in b %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">10 ~ 11</th>
+            {% for dt in c %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">11 ~ 12</th>
+            {% for dt in d %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">12 ~ 13</th>
+            {% for dt in e %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">13 ~ 14</th>
+            {% for dt in f %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">14 ~ 15</th>
+            {% for dt in g %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">15 ~ 16</th>
+            {% for dt in h %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">16 ~ 17</th>
+            {% for dt in i %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">17 ~ 18</th>
+            {% for dt in j %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">18 ~ 19</th>
+            {% for dt in k %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">19 ~ 20</th>
+            {% for dt in l %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">20 ~ 21</th>
+            {% for dt in m %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">21 ~ 22</th>
+            {% for dt in n %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">22 ~ 23</th>
+            {% for dt in o %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">23 ~ 24</th>
+            {% for dt in p %}
+                {% if dt > 0 %}
+                    <td class="colorwhite"></td>
+                {% else %}
+                    <td class="colorBlue"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+      </tbody>
+
+    </table>
+{% endblock %}
