@@ -1,6 +1,9 @@
 venv/
 .idea/
 .vscode/
-__pycache/
 myenv/
 *.sqlite3
+*.pyc
+myvenv
+__pycache__
+local_settings.py
